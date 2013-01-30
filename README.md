@@ -1,4 +1,4 @@
-Excape-the-Ship
+##Excape-the-Ship
 
-I made this 2d platform game in a week after taking a week to learn python programing and the (pygame)[http://www.pygame.org/news.html] library. Currently the code is a little bad but in the process of reorganizing it.
+I made this 2d platform game in a week after taking a week to learn python programing and the [pygame](http://www.pygame.org/news.html) library. Currently the code is a little bad but in the process of reorganizing it.
 
