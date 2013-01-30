@@ -2,7 +2,7 @@ import pygame
 class Ebullet(object):
 	def __init__(self, enemy,mr,ml,d):
 		self.enemy=enemy
-		self.image=pygame.image.load("energyright.png")
+		self.image=pygame.image.load("Images/energyright.png")
 		self.speed=15
 		self.traveled=0
 		self.wait=4
@@ -11,7 +11,7 @@ class Ebullet(object):
 		self.d=d
 		self.draw_rect=self.image.get_rect(width=75)
 		if self.d=='l':
-			self.image=pygame.image.load("energyleft.png")
+			self.image=pygame.image.load("Images/energyleft.png")
 			self.rect.topright=ml
 	def update(self):
 		self.wait-=1

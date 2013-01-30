@@ -29,10 +29,10 @@ class Sprite(object):
 		self.motionx = Motion(9)
 		self.motiony = Motion(3.5)
 		self.images = {}
-		self.images[pygame.K_DOWN] = pygame.image.load("charjumpleft.png").convert_alpha() # jump left
-		self.images[pygame.K_UP] = pygame.image.load("charjumpright.png").convert_alpha() #jump right
-		self.images[pygame.K_LEFT] = pygame.image.load("lmsheet.png").convert_alpha()
-		self.images[pygame.K_RIGHT] = pygame.image.load("rmsheet.png").convert_alpha()
+		self.images[pygame.K_DOWN] = pygame.image.load("Images/charjumpleft.png").convert_alpha() # jump left
+		self.images[pygame.K_UP] = pygame.image.load("Images/charjumpright.png").convert_alpha() #jump right
+		self.images[pygame.K_LEFT] = pygame.image.load("Images/lmsheet.png").convert_alpha()
+		self.images[pygame.K_RIGHT] = pygame.image.load("Images/rmsheet.png").convert_alpha()
 		self.rect=pygame.Rect(0,0,self.image_width,self.image_hight)
 		self.rect.bottom=Game.screen_rect.bottom - 400
 		self.rect.right = Game.screen_rect.right /2
@@ -42,7 +42,7 @@ class Sprite(object):
 		self.animation_rate=10
 		self.lives=3
 		self.animation_counter=0
-		self.dimage=self.dimage=pygame.image.load("ld.png")
+		self.dimage=self.dimage=pygame.image.load("Images/ld.png")
 		self.draw_rect=pygame.Rect(0,0,self.image_width,self.image_hight)
 		self.last_horozontal = 0
 		self.velocityx = 1
@@ -51,7 +51,7 @@ class Sprite(object):
 		
 	def d_update(self):
 		if self.motionx.velocity>0:
-			self.dimage=pygame.image.load("rd.png")
+			self.dimage=pygame.image.load("Images/rd.png")
 		self.animation_counter+=1
 		if self.animation_counter>self.danimation_rate:
 			self.danimation_counter=0

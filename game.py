@@ -17,11 +17,11 @@ class Game(object):
 		self.screen = pygame.display.set_mode((1350,900), pygame.FULLSCREEN)
 		self.clock=pygame.time.Clock()
 		self.screen_rect=self.screen.get_rect()
-		self.hole_image=pygame.image.load('largepit.png')
+		self.hole_image=pygame.image.load('Images/largepit.png')
 		
-		self.door=pygame.image.load('door.png')
+		self.door=pygame.image.load('Images/door.png')
 
-		self.blacksquare=pygame.image.load('black.png')
+		self.blacksquare=pygame.image.load('Images/black.png')
 		self.menu=menu.Menu(self)
 		
 		self.background=background.Background(self)
@@ -171,7 +171,7 @@ class Game(object):
 					self.enemy_list.remove(e)
 		
 	def win(self):
-		win=pygame.image.load("win.png")
+		win=pygame.image.load("Images/win.png")
 		win_rect=win.get_rect()
 		win_rect.topleft=(0,0)
 		self.screen.blit(win,win_rect)
@@ -182,7 +182,7 @@ class Game(object):
 		self.reset()
 				
 	def lose(self):
-		lose=pygame.image.load("gameover.png")
+		lose=pygame.image.load("Images/gameover.png")
 		lose_rect=lose.get_rect()
 		lose_rect.topleft=(0,0)
 		self.screen.blit(lose,lose_rect)

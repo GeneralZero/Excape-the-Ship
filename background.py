@@ -4,7 +4,7 @@ class Background(object):
 	def __init__(self, Game):
 		self.Game=Game
 		pygame.init()
-		self.mainsurf=pygame.image.load("BG.png").convert()
+		self.mainsurf=pygame.image.load("Images/BG.png").convert()
 		self.rect=self.Game.screen.get_rect()
 		self.draw_rect=self.mainsurf.get_rect(width=1350)
 		
